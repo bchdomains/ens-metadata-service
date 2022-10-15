@@ -15,6 +15,7 @@ const NETWORK = {
   "SMARTBCH-AMBER": 'smartbch-amber',
   DOGECHAIN: 'dogechain',
   "DOGECHAIN-TESTNET": 'dogechain-testnet',
+  ETHPOW: 'ethpow',
 };
 
 const NETWORK_ID: any = {
@@ -24,9 +25,10 @@ const NETWORK_ID: any = {
   5: 'goerli',
   1337: 'local',
   10000: 'smartbch',
-  10001: 'smartbch-amber',
+  // 10001: 'smartbch-amber',
   2000: 'dogechain',
   568: 'dogechain-testnet',
+  10001: 'ethpow',
 };
 
 export function getNetworkById(networkId: number): any {
@@ -73,6 +75,15 @@ export default function getNetwork(network: string): any {
         ensAddress: "0xCfb86556760d03942EBf1ba88a9870e67D77b627"
       }
       break;
+    // case NETWORK["SMARTBCH-AMBER"]:
+    //   SUBGRAPH_URL = 'https://graph.bch.domains/subgraphs/name/graphprotocol/ens-amber';
+    //   INFURA_URL = `http://moeing.tech:8545`;
+    //   NETWORKISH = {
+    //     name: "smartbch-amber",
+    //     chainId: 10001,
+    //     ensAddress: "0x32f1FBE59D771bdB7FB247FE97A635f50659202b"
+    //   }
+    //   break;
     case NETWORK["SMARTBCH-AMBER"]:
       SUBGRAPH_URL = 'https://graph.bch.domains/subgraphs/name/graphprotocol/ens-amber';
       INFURA_URL = `http://moeing.tech:8545`;
@@ -98,6 +109,15 @@ export default function getNetwork(network: string): any {
         name: "dogechain-testnet",
         chainId: 568,
         ensAddress: "0x08850859CE6B62A39918c8B806AfbE3442fE7b0b"
+      }
+      break;
+    case NETWORK.ETHPOW:
+      SUBGRAPH_URL = 'https://graph.bch.domains/subgraphs/name/graphprotocol/ens-ethpow';
+      INFURA_URL = `https://mainnet.ethereumpow.org`;
+      NETWORKISH = {
+        name: "ethpow",
+        chainId: 10001,
+        ensAddress: "0xd3d3cF6937015593b3424F81e5F44CefB8A90588"
       }
       break;
     default:
