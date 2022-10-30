@@ -35,7 +35,10 @@ https://metadata.bch.domains/dogechain/0x0aF878360B48b5f51F4e919f3cC1EC08B78627a
 https://metadata.bch.domains/dogechain/0xe83c2021550b17169bd2d608c51ba6a2bea0f350/0xa1ed537a640b942ced4023e4bcce52645fcedf46b28b966a036b9fe422a83e89
 
 // ethw domain
-http://metadata.bch.domains/ethpow/0x0a0bacad455e764d834adf4916b5432e2054686d/0x5fe5663cec65d84e0c01671a1d6e49dfb0b85acd80e73ce507f9b21977d4f099
+http://metadata.powns.domains/ethpow/0x0a0bacad455e764d834adf4916b5432e2054686d/0x5fe5663cec65d84e0c01671a1d6e49dfb0b85acd80e73ce507f9b21977d4f099
+
+// uniw domain
+http://localhost:8080/ethpow/0x24Bd03494EA9D0bE43c2bEfFf1C94960dc321003/0x0ffe095c00ad8f8f98acbd70a1c607907a4601c528688484cfd8921fce5d8400
 
 ### Response (example)
 

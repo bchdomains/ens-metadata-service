@@ -17,6 +17,7 @@ const BCH_NAMEHASH = '0x4062ae9e99543fadaf6946b98c6f12538a99834a89521ef85301d7d9
 const DOGE_NAMEHASH = '0x294e2d893ce499d687a17323b05880c4cf91b7fcf595374ecf3f9eb52aff9398';
 const DC_NAMEHASH = '0x458f3086a527467f29a17c336f3a63f5e1207a370e449006f79291e42b342da7';
 const ETHW_NAMEHASH = '0x13dee413edb145672cb5b774d12aca9899044f674519087a2a45289d27854ece';
+const UNIW_NAMEHASH = '0xf0a02c0a9cb1e2400389de81d63e37a6e49f6277efbda9cf351287eb5abf86d1';
 
 const networkRootLabelHash: any = {
   "smartbch": BCH_NAMEHASH,
@@ -43,6 +44,7 @@ const contractAddressToLabelHashMap: any = {
 
   // ethpow mainnet
   "0x0a0bacad455e764d834adf4916b5432e2054686d": ETHW_NAMEHASH,  // .ethw
+  "0x24bd03494ea9d0be43c2befff1c94960dc321003": UNIW_NAMEHASH,  // .uniw
 }
 
 export async function getDomain(

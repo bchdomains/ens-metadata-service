@@ -113,7 +113,7 @@ export default function getNetwork(network: string): any {
       break;
     case NETWORK.ETHPOW:
       SUBGRAPH_URL = 'https://graph.bch.domains/subgraphs/name/graphprotocol/ens-ethpow';
-      INFURA_URL = `https://mainnet.ethereumpow.org`;
+      INFURA_URL = `https://uniwnode.com`;
       NETWORKISH = {
         name: "ethpow",
         chainId: 10001,
